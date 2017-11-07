@@ -7,7 +7,7 @@ const vuxLoader = require('vux-loader')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
 
-function resolve (dir) {
+function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
@@ -26,7 +26,8 @@ let webpackConfig = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src')
+      '@': resolve('src'),
+      'components': resolve('src/components')
     }
   },
   module: {
