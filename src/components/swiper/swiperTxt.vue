@@ -22,28 +22,13 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.text-scroll {
-  position: relative;
-  &::after {
-    content: ' ';
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 1px;
-    bottom: 0;
-    border-bottom: 1px solid #d9d9d9;
-    color: #d9d9d9;
-    transform-origin: 0 0;
-    transform: scaleY(0.5);
-  }
-  .vux-swiper > .vux-swiper-item {
-    p {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      font-size: 14px;
-      text-align: center;
-    }
+.vux-swiper > .vux-swiper-item {
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    text-align: center;
   }
 }
 </style>

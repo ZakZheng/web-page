@@ -1,0 +1,3 @@
+export const SET_ISLOADING = 'SET_ISLOADING'
+
+export const SET_DIRECTION = 'SET_DIRECTION'
